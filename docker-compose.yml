@@ -1,0 +1,16 @@
+version: '2'
+services:
+  webapp:
+    image: gsol/node:6.10.3-dev-3
+    user: "${WEBAPP_USER}"
+    entrypoint:
+      - npm
+    command: [start]
+    volumes:
+      - .:/home/node/app
+    restart: always
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+      - "3002:3002"
+      - "8080:8080"
