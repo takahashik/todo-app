@@ -9,6 +9,7 @@
 
 /* @flow */
 
+// flow-disable-line
 import fetch from 'isomorphic-fetch';
 
 type Options = {
@@ -35,7 +36,7 @@ function createFetch({ baseUrl, cookie }: Options) {
     },
   };
 
-  return (url, options) => ((url.startsWith('/graphql') || url.startsWith('/api')) ?
+  return (url: string, options: {headers :{}}) => ((url.startsWith('/graphql') || url.startsWith('/api')) ?
     fetch(`${baseUrl}${url}`, {
       ...defaults,
       ...options,
