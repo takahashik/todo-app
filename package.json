@@ -175,6 +175,7 @@
     "serve": "babel-node tools/run runServer",
     "start": "babel-node tools/run start",
     "storybook": "start-storybook -p 9001",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "flow": "flow"
   }
 }
