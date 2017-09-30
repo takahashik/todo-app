@@ -25,7 +25,7 @@ module.exports = (baseConfig, env) => {
       loader: 'postcss-loader',
       options: {
         config: {
-          path: '.storybook/postcss.config.js',
+          path: 'tools/postcss.config.js',
         },
       },
     },
