@@ -81,6 +81,7 @@ const config = {
         test: /\.css$/,
         include: [
           path.resolve(__dirname, '../src'),
+          path.resolve(__dirname, '../node_modules/react-toolbox'),
         ],
         use: [
           {
@@ -115,6 +116,7 @@ const config = {
         test: /\.css$/,
         exclude: [
           path.resolve(__dirname, '../src'),
+          path.resolve(__dirname, '../node_modules/react-toolbox'),
         ],
         use: [
           {
@@ -318,7 +320,8 @@ const serverConfig = {
     (context, request, callback) => {
       const isExternal =
         request.match(/^[@a-z][a-z/.\-0-9]*$/i) &&
-        !request.match(/\.(css|less|scss|sss)$/i);
+        !request.match(/\.(css|less|scss|sss)$/i) &&
+        !request.match(/react-toolbox/i);
       callback(null, Boolean(isExternal));
     },
   ],
