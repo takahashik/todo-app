@@ -2,9 +2,9 @@
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Button as RTButton } from 'react-toolbox/lib/button';
+import { RawButton as Button } from '../Button';
 
-storiesOf(RTButton.name)
+storiesOf(Button.name)
 .add('props', () => (
-  <RTButton label="button" raised primary />
+  <Button />
 ));
