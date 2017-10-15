@@ -59,6 +59,7 @@
     "babel-plugin-istanbul": "^4.1.1",
     "babel-plugin-rewire": "^1.1.0",
     "babel-preset-env": "^1.4.0",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-react-optimize": "^1.0.1",
     "babel-preset-stage-2": "^6.24.1",
@@ -80,6 +81,7 @@
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.0.1",
     "file-loader": "^0.11.1",
+    "flow-bin": "^0.57.2",
     "front-matter": "^2.1.2",
     "glob": "^7.1.1",
     "json-loader": "^0.5.4",
@@ -137,7 +139,8 @@
         }
       ],
       "stage-2",
-      "react"
+      "react",
+      "flow"
     ],
     "env": {
       "test": {
