@@ -6,5 +6,5 @@ import { RawButton as Button } from '../Button';
 
 storiesOf(Button.name)
 .add('props', () => (
-  <Button />
+  <Button label="button" raised primary />
 ));
