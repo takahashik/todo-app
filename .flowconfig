@@ -2,6 +2,8 @@
 .*/build
 .*/docs
 .*/public
+.*/node_modules/stylelint/.*
+.*/node_modules/eslint-plugin-jsx-a11y/src/rules/media-has-caption\.js
 
 [include]
 
