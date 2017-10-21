@@ -8,7 +8,7 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 /* eslint-disable react/require-default-props */
 export type ButtonPropType = {|
   accent?: boolean,
-  className?: String,
+  className?: string,
   disabled?: boolean,
   flat?: boolean,
   floating?: boolean,
