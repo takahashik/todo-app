@@ -17,7 +17,7 @@ type T = {
   },
   buttonProps?: ButtonProps,
 }
-type TodoItemProps = T & $Shape<T>; // eslint-disable-line no-undef
+export type TodoItemProps = T & $Shape<T>; // eslint-disable-line no-undef
 function TodoItem(props: TodoItemProps) {
   const {
     label,
